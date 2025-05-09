@@ -18,11 +18,12 @@ spec:
       - url: https://netbox-demo.netboxlabs.com/api/
     components:
       securitySchemes:
-        BearerAuth:
-          type: https
-          scheme: bearer
+        TokenAuth:
+          type: apiKey
+          in: header
+          name: Authorization
     security:
-      - BearerAuth: []
+      - TokenAuth: []
     paths:
       /dcim/devices/:
         get:
