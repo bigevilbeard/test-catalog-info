@@ -16,6 +16,13 @@ spec:
         name: MIT
     servers:
       - url: https://netbox-demo.netboxlabs.com/api/
+    components:
+      securitySchemes:
+        BearerAuth:
+          type: http
+          scheme: bearer
+    security:
+      - BearerAuth: []
     paths:
       /dcim/devices/:
         get:
