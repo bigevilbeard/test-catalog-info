@@ -16,7 +16,7 @@ spec:
         name: MIT
     servers:
       # - url: https://netbox-demo.netboxlabs.com/api/
-      - url: http://localhost:7007/netbox/api/
+      - url: http://localhost:7007/netboxproxy/
     components:
       securitySchemes:
         TokenAuth:
