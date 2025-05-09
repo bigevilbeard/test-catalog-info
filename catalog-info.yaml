@@ -15,7 +15,8 @@ spec:
       license:
         name: MIT
     servers:
-      - url: https://netbox-demo.netboxlabs.com/api/
+      # - url: https://netbox-demo.netboxlabs.com/api/
+      - url: http://localhost:7007/netbox/api/
     components:
       securitySchemes:
         TokenAuth:
