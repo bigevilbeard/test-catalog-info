@@ -5,4 +5,4 @@ metadata:
   description: TestNetBox
 spec:
   targets:
-    - ./apis/netbox-api.yaml
+    - ./catalog-info.yaml
