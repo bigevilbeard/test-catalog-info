@@ -7,16 +7,26 @@ spec:
   type: openapi
   lifecycle: production
   owner: my-team
-  definition: |
-    openapi: "3.0.0"
-    info:
-      version: 1.0.0
-      title: Devices API
-      license:
-        name: MIT
-    servers:
-      - url: https://netbox-demo.netboxlabs.com/api/
-    paths:
-      /dcim/devices/:
-        get:
-          summary: List all devices
+  definition: >
+    {
+      "openapi": "3.0.0",
+      "info": {
+        "version": "1.0.0",
+        "title": "Devices API",
+        "license": {
+          "name": "MIT"
+        }
+      },
+      "servers": [
+        {
+          "url": "https://netbox-demo.netboxlabs.com/api/"
+        }
+      ],
+      "paths": {
+        "/dcim/devices/": {
+          "get": {
+            "summary": "List all devices"
+          }
+        }
+      }
+    }
