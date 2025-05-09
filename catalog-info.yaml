@@ -1,12 +1,13 @@
 apiVersion: backstage.io/v1alpha1
-kind: Location
+kind: API
 metadata:
-  name: Netbox
-  description: TestNetBox
+  name: netbox
+  description: Netbox Devices API
 spec:
-  targets:
-    - ./apis/netbox-api.yaml
-definition: |
+  type: openapi
+  lifecycle: production
+  owner: my-team
+  definition:
     openapi: "3.0.0"
     info:
       version: 1.0.0
@@ -16,6 +17,6 @@ definition: |
     servers:
       - url: https://netbox-demo.netboxlabs.com/api/
     paths:
-      //dcim/devices/:
+      /dcim/devices/:
         get:
           summary: List all devices
