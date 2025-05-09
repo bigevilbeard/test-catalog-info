@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: Netbox
+  description: TestNetBox
+spec:
+  targets:
+    - ./apis/netbox-api.yaml
