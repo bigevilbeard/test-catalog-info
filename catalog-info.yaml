@@ -15,7 +15,7 @@ spec:
       license:
         name: MIT
     servers:
-      - url: http://localhost:7007/netbox/api/
+      - url: http://localhost:7007/api/proxy/netbox/api/
     paths:
       /dcim/devices/:
         get:
